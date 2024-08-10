@@ -1,0 +1,91 @@
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{siunitx}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{tcolorbox}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\renewcommand\thesubsection{\thesection.\alph{subsection}}
+
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\definecolor{kit-green}{RGB}{0, 150, 130}
+\definecolor{kit-blue}{RGB}{70, 100, 170}
+\definecolor{kit-red}{RGB}{163, 34, 35}
+
+
+\newcommand{\greenbox}[2]{
+    \begin{tcolorbox}[colback=kit-green!5!white,
+                    colframe=kit-green!99!black,
+                    title={\Large#1}]
+        {#2}
+    \end{tcolorbox}   
+}
+
+\newcommand{\bluebox}[2]{
+    \begin{tcolorbox}[colback=kit-blue!5!white,
+                    colframe=kit-blue!99!black,
+                    title={\Large#1}]
+        {#2}
+    \end{tcolorbox}   
+}
+
+\newcommand{\redbox}[2]{
+    \begin{tcolorbox}[colback=kit-red!5!white,
+                    colframe=kit-red!100!black,
+                    title={\Large#1}]
+        {#2}
+    \end{tcolorbox}   
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%code specific (python)
+
+\usepackage{listings}
+%
+%
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    %backgroundcolor=\color{backcolour},   
+    commentstyle=\color{kit-blue},
+    %keywordstyle=\color{magenta},
+    keywordstyle=\color{kit-green},
+    %numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    %numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    %showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
