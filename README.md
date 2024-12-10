@@ -4,7 +4,7 @@ This repository contains my work on the Kaggle Higgs Boson Machine Learning Chal
 
 ## Overview
 
-While I explored mayn different approaches, two remained.
+While I explored many different approaches, two remained.
 
 ### Deep Neural Network (DNN)
    I built a Deep Neural Network using TensorFlow. The DNN was tuned with various architectures, activation functions, and optimizers to improve classification accuracy.
